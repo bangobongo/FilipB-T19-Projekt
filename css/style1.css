@@ -1,0 +1,31 @@
+#spacer{
+  /*height: 100%;*/
+}
+article{
+  margin: 6% 6% 6%;
+  padding: 2%;
+  background: rgba(0,0,0,.75);
+  color: #ffff;
+}
+
+html {
+/* till för att förhindra "överskollning" */
+    overflow: hidden;
+    height: 100%;
+/* till för att förhindra "överskollning" */
+    font-size: 1em !important;
+    color: #000 !important;
+    font-family: Arial !important;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../img/background1.jpg");
+    background-repeat: no-repeat;
+}
+a {
+  color: hotpink;
+}

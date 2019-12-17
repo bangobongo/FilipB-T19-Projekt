@@ -1,0 +1,19 @@
+{
+  "name": "filip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browsersync": "0.0.1-security",
+    "serve": "^11.2.0"
+  }
+}

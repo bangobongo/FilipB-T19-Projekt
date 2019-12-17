@@ -1,0 +1,67 @@
+html {
+  overflow: hidden;
+  height: 100%;
+  font-size: 1em;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: auto;
+}
+
+.nav {
+  display: block;
+}
+
+.index {
+  background-image: url("../img/background.jpg");
+}
+
+.krav {
+  background-image: url("../img/background1.jpg");
+}
+
+article {
+  margin: 100vh 6% 6% 6%;
+  padding: 2%;
+  background: rgba(0, 0, 0, .85);
+  color: #ffff;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+.centeredh2 {
+  text-align: center;
+}
+
+p {
+  font-size: 1.15rem;
+  font-weight: lighter;
+}
+
+.boldp {
+  font-weight: bold;
+}
+
+.blue {
+  font-size: 2em;
+  color: magenta;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+a {
+  color: hotpink;
+}
