@@ -1,9 +1,10 @@
 html {
-  overflow: hidden;
+  overflow: auto;
   height: 100%;
   font-size: 1em;
   color: #000;
   font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,11 +12,42 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-  overflow: auto;
+}
+
+#scroller{
+  background: 0;
+  border: 0;
+  margin-top: 13%;
+  -webkit-text-stroke: 3px #c3be15;
+  color: #0d3c61;
+  font-size: 170px;
+  transition: all 0.5s ease;
+}
+#scroller:hover{
+  -webkit-text-stroke: 6px #0d3c61;;
+  color: #c3be15;
+  cursor: pointer;
+}
+#scroller:active, #scroller:focus{
+  outline: 0;
+}
+
+.home {
+  margin-top: 5%
 }
 
 .nav {
   display: block;
+}
+
+.kontakt{
+  background-image: url("../img/polis4k.png");
+  background-repeat: round;
+}
+
+.anledning{
+  background-image: url("../img/polis4k.png");
+  background-repeat: repeat;
 }
 
 .index {
@@ -43,7 +75,20 @@ h2 {
   text-align: left;
 }
 
-.centeredh2 {
+.youtube {
+  width: 560px;
+  display: block;
+  margin: 0% 12% 0 auto;
+  height: 300px;
+}
+
+.list-heading {
+  list-style-position: inside;
+  display: list-item;
+  list-style-type: disc;
+}
+
+.center {
   text-align: center;
 }
 
@@ -57,11 +102,112 @@ p {
 }
 
 .blue {
-  font-size: 2em;
-  color: magenta;
+  float: left;
+  display: block;
+  margin-left: 125px;
+  padding: 8px;
+  background-color: transparent;
+  font-size: 1em;
+  color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.here {
+  float: left;
+  display: block;
+  margin-left: 125px;
+  padding: 8px;
+  background-color: transparent;
+  font-size: 1.5em;
+  color: black;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 a {
   color: hotpink;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
 }
